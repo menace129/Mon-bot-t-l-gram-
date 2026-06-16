@@ -11,6 +11,11 @@ series = {
     "saison3": list(range(49, 68)),
     "saison4": list(range(68, 92)),
     "saison5": list(range(92, 115)),
+
+    "saison6": list(range(115, 126)),
+    "saison7": [127, 157, 158, 128, 129, 130, 131, 132, 133, 134],
+    "saison8": list(range(135, 146)),
+    "saison9": list(range(146, 157)),
 }
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
