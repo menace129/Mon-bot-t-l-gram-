@@ -13,9 +13,9 @@ series = {
     "saison5": list(range(92, 115)),
 
     "saison6": list(range(115, 126)),
-    "saison7": [127, 157, 158, 128, 129, 130, 131, 132, 133, 134],
+    "saison7": [127, 146, 147, 128, 129, 130, 131, 132, 133, 134],
     "saison8": list(range(135, 146)),
-    "saison9": list(range(146, 157)),
+    "saison9": [148, 149, 150, 151, 152, 153, 154, 155, 156],
 }
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -23,7 +23,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if args and args[0] in series:
         saison = args[0]
         episodes = series[saison]
-        await update.message.reply_text(f"⏳ Envoi de {saison} en cours...")
+        await update.message.reply_text(f"⏳ Envoi en cours...")
         for message_id in episodes:
             await context.bot.copy_message(
                 chat_id=update.effective_chat.id,
