@@ -24,6 +24,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     else:
         await update.message.reply_text("👋 Bienvenue ! Allez sur le canal pour choisir une saison.")
 
-app = ApplicationBuilder().token("8838395874:AAF9EvidHwU9J_SUERof6cc1O2A7DnoUlFY").build()
+import os
+TOKEN = os.environ.get("TOKEN")
+app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.run_polling()
