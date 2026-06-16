@@ -7,10 +7,10 @@ CANAL =-1004466288853
 # Chaque saison contient la liste des numéros de messages
 series = {
     "saison1": list(range(3, 26)),# numéros des épisodes
-    "saison2": list(range(26, 48)),
-    "saison3": list(range(49, 67)),
-    "saison4": list(range(68, 91)),
-    "saison5": list(range(92, 114)),
+    "saison2": list(range(26, 49)),
+    "saison3": list(range(49, 68)),
+    "saison4": list(range(68, 92)),
+    "saison5": list(range(92, 115)),
 }
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
