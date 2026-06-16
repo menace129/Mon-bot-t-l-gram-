@@ -2,7 +2,7 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-CANAL = "-1004466288853"
+CANAL = -1004466288853
 
 # Chaque saison contient la liste des numéros de messages
 series = {
